@@ -11,8 +11,6 @@ services:
     working_dir: /home/node/app
     environment:
       - NODE_ENV=production
-    #volumes:
-    #  - "./gui/:/home/node/app"
     expose:
       - "3000"
     command: "npm start"

@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.myButton-green {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton-green:hover {
+	background-color:#5cbf2a;
+}
+.myButton-green:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton-blue {
+	background-color:#4a45c7;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #1728e6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #030052;
+}
+.myButton-blue:hover {
+	background-color:#130661;
+}
+.myButton-blue:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton-yellow {
+	background-color:#ded414;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #f5d818;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #979c0e;
+}
+.myButton-yellow:hover {
+	background-color:#858507;
+}
+.myButton-yellow:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.arrow {
+  transform: scale(0.5);
+}
+
+.arrow-right {
+  transform: rotate(90deg);
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+}
+
+.arrow-left {
+  transform: rotate(270deg);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

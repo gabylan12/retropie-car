@@ -1,0 +1,30 @@
+version: '3'
+services:
+  web:
+    build:
+      context: gui
+      args:
+        architecture: "amd64"
+        #architecture: "arm32v7"
+    restart: always
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    #volumes:
+    #  - "./gui/:/home/node/app"
+    expose:
+      - "3000"
+    command: "npm start"
+    ports:
+      - "3000:3000"
+  core:
+    privileged: true
+    restart: always
+    build:
+      context: core
+      args:
+        architecture: "amd64"
+        #architecture: "arm32v7"
+    ports:
+      - "5000:5000"

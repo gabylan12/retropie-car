@@ -1,11 +1,13 @@
 ARG architecture
 FROM $architecture/node:8.16.0-jessie
-RUN yarn install --network-timeout 1000000
-RUN npm config set registry=https://registry.npmjs.com/
+WORKDIR  /home/node/
+RUN yarn --network-timeout 1000000
+RUN set http_proxy=
+RUN set https_proxy=
+RUN yarn config delete proxy
 RUN npm config rm proxy
 RUN npm config rm https-proxy
-WORKDIR  /home/node/
-RUN npx create-react-app app
+RUN npx create-react-app app --network-timeout 100000
 RUN npm i -S axios
 COPY package.json /home/node/app
 COPY public/ /home/node/app/public

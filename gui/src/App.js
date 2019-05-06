@@ -13,8 +13,8 @@ class App extends Component{
     }
 
     handleClick(e){
-        console.log (e.target.id)
-        axios.get('http://localhost:5000/' + e.target.id)
+        console.log ('http://'+window.location.hostname+':5000/' + e.target.id)
+        axios.get('http://'+window.location.hostname+':5000/' + e.target.id)
     }
 
     render() {
